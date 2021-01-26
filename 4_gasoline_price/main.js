@@ -4,7 +4,7 @@ function calculate() {
   let answer = document.querySelector("#answer");
   let solution = document.querySelector("#solution");
 
-  let litres = money / price;
+  let litres = Math.floor(money / price);
   let text;
 
   litres >= 10
@@ -18,7 +18,7 @@ function calculate() {
         text = "Ups, you have to stay here";
     } 
 */
-  answer.innerHTML = `You can buy ${litres} litres of gasoline`;
+  answer.textContent = `You can buy ${litres} litres of gasoline`;
   solution.textContent = text;
 
   /*   if possible do not use innerHTML nor innerText
