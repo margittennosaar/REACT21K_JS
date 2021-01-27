@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Second week tasks</title>
+  </head>
+  <body>
+    <h1>Second week tasks</h1>
+    <h2>Workday salary</h2>
+    <p>
+      Make a program that asks hourly salary and how many hours user worked on
+      one day. With this information program calculates day’s salary. The salary
+      is calculated as follows: - first 7 hours by hourly salary - next 2 hours
+      50% extra - rest of the hours 100% extra
+    </p>
+    <form>
+      <div>
+        <label for="hsalary">Hourly salary</label>
+        <input
+          type="text"
+          id="hsalary"
+          placeholder="Enter your hourly salary"
+        />
+      </div>
+      <div>
+        <label for="hours">How many hours you did work today?</label>
+        <input type="text" id="hours" placeholder="Enter hours" />
+      </div>
+    </form>
+    <button onclick="countSalary()">Calculate your salary</button>
+    <p id="solution"></p>
+    <script src="main.js"></script>
+  </body>
+</html>
