@@ -1,0 +1,39 @@
+body,
+input {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top right, #e47a69, #a0387f);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+h2 {
+  padding-top: 50px;
+  border-top: 1px dashed #c6c6c6;
+}
+
+input[type="submit"] {
+  background: #333;
+  display: block;
+  margin: 50px auto;
+  padding: 16px;
+  color: white;
+  border: none;
+}
+
+.direction {
+  display: inline-block;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BG Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Background Generator</h1>
+      <form>
+        <h2>First, choose the direction:</h2>
+        <div class="direction">
+          <input type="radio" name="direction" id="lefttorigth" />
+          <label for="lefttorigth">Left to Right</label>
+        </div>
+        <div class="direction">
+          <input type="radio" name="direction" id="righttoleft" />
+          <label for="righttoleft">Right to Left</label>
+        </div>
+        <div class="direction">
+          <input type="radio" name="direction" id="toptobottom" />
+          <label for="toptobottom">Top to Bottom</label>
+        </div>
+        <div class="direction">
+          <input type="radio" name="direction" id="bottomtotop" />
+          <label for="bottomtotop">Bottom to Top</label>
+        </div>
+        <h2>Second, choose your colors:</h2>
+        <input type="color" id="color1" value="#e47a69" />
+        <input type="color" id="color2" value="#a0387f" />
+        <h2>Third, generate your gradient:</h2>
+        <input type="submit" value="Generate" />
+      </form>
+      <h2>Finally, copy your CSS code:</h2>
+      <p></p>
+    </div>
+  </body>
+</html>
