@@ -6,8 +6,8 @@ let text = document.querySelector("p");
 
 let direction = document.querySelectorAll('input[name="direction"]');
 
-const setGradient = (event) => {
-  event.preventDefault();
+const setGradient = (e) => {
+  e.preventDefault();
   let selectedValue;
 
   for (const v of direction) {
