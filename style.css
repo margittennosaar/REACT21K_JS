@@ -1,0 +1,93 @@
+body {
+  font-family: "Dosis", sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #79fcca,
+    #8cffa9,
+    #acfe82,
+    #d3fa57,
+    #fff225
+  );
+  background-attachment: fixed;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+#score {
+  height: 24px;
+}
+
+.gamearea {
+  margin: 100px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  background: #efefef;
+  box-shadow: 0 0 3px 2px #333;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+.circle.active {
+  background-color: blue;
+}
+
+.circle:active {
+  box-shadow: inset 0 0 5px #333;
+}
+
+button {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 20px;
+}
+
+#result {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameoverbox {
+  background-color: white;
+  padding: 100px 0 0 0;
+  width: 40%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.gameoverbox button {
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  outline: none;
+}
+
+#gameover {
+  font-size: 24px;
+  color: #333;
+}

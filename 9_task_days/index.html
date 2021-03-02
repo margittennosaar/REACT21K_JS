@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Days counter</title>
+  </head>
+  <body>
+    <h1>How many days are left?</h1>
+
+    <form>
+      <div>
+        <label for="start">Select starting date:</label>
+        <input type="date" name="start" id="start" />
+      </div>
+      <div>
+        <label for="end">Select ending date:</label>
+        <input type="date" name="end" id="end" />
+      </div>
+      <div>
+        <label for="title">What is the event?</label>
+        <input type="text" name="title" id="title" />
+      </div>
+      <input type="submit" value="Calculate" />
+    </form>
+
+    <p id="answer"></p>
+    <p id="timer"></p>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
